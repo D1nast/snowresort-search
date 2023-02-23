@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
+# 使用技術
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
+## 技術スタック
+React
