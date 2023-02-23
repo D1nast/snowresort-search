@@ -1,0 +1,99 @@
+{
+  "pagingInfo": {
+    "recordCount": 412,
+    "pageCount": 14,
+    "page": 1,
+    "first": 1,
+    "last": 30
+  },
+  "hotels": [
+    {
+      "hotel": [
+        {
+          "hotelBasicInfo": {
+            "hotelNo": 167519,
+            "hotelName": "ノボテル沖縄那覇",
+            "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=167519",
+            "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=167519&f_flg=PLAN",
+            "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=167519",
+            "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=167519",
+            "hotelKanaName": "のぼてる　おきなわ　なは",
+            "hotelSpecial": "国際通りから車で約５分、那覇にいてもリゾート気分を！クラブラウンジやインフィニティプールがあるホテル",
+            "hotelMinCharge": 5700,
+            "latitude": 94374.6,
+            "longitude": 459750.57,
+            "postalCode": "902-0062",
+            "address1": "沖縄県",
+            "address2": "那覇市松川40番地",
+            "telephoneNo": "098-887-1111",
+            "faxNo": "098-886-5591",
+            "access": "那覇空港から車で約25分、ゆいレール安里駅よりタクシーで約５分／徒歩約２０分",
+            "parkingInformation": "有り（1泊1台1,000円）　※事前予約不可",
+            "nearestStation": null,
+            "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/167519/167519.jpg",
+            "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/167519.jpg",
+            "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/167519/167519_room.jpg",
+            "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/167519.jpg",
+            "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/167519/167519map.gif",
+            "reviewCount": 306,
+            "reviewAverage": 4.37,
+            "userReview": "彼女との旅行で使いました。宿、接客、サービス等とても良かったです。シャワーの水圧がすこし弱かったですが、機会があれば再度泊まらせていただきたいです。　2022-10-28 11:46:44投稿"
+          }
+        },
+        {
+          "hotelRatingInfo": {
+            "serviceAverage": 4.28,
+            "locationAverage": 3.61,
+            "roomAverage": 4.44,
+            "equipmentAverage": 4.2,
+            "bathAverage": 3.83,
+            "mealAverage": 4
+          }
+        }
+      ]
+    },
+    {
+      "hotel": [
+        {
+          "hotelBasicInfo": {
+            "hotelNo": 134763,
+            "hotelName": "ダイワロイネットホテル那覇おもろまち",
+            "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=134763",
+            "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=134763&f_flg=PLAN",
+            "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=134763",
+            "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=134763",
+            "hotelKanaName": "だいわろいねっとほてるなはおもろまち",
+            "hotelSpecial": "海も見える最上階18階での朝食が評判！■客室階は全室10階以上♪■高速道路、西原IC近く観光にも◎",
+            "hotelMinCharge": 4050,
+            "latitude": 94389.24,
+            "longitude": 459709.57,
+            "postalCode": "900-0006",
+            "address1": "沖縄県",
+            "address2": "那覇市おもろまち1-1-12",
+            "telephoneNo": "098-862-4555",
+            "faxNo": "098-862-4556",
+            "access": "ゆいレール　おもろまち駅より徒歩５分　国際通りより車で5分",
+            "parkingInformation": "1台1,100円(1泊)先着順。ホテル1階に専用P有＊満車時は提携P（1,100円）をご利用下さい。",
+            "nearestStation": null,
+            "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/134763/134763.jpg",
+            "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/134763.jpg",
+            "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/134763/134763_tw.jpg",
+            "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/134763.jpg",
+            "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/134763/134763map.gif",
+            "reviewCount": 867,
+            "reviewAverage": 4.37,
+            "userReview": "ビジネスホテルだけれど部屋は広く快適であった。ビルの一階にコンビニがあるので足りないものをすぐに買いに行けて便利である。　2022-10-26 20:56:05投稿"
+          }
+        },
+        {
+          "hotelRatingInfo": {
+            "serviceAverage": 4.15,
+            "locationAverage": 4.11,
+            "roomAverage": 4.44,
+            "equipmentAverage": 4.06,
+            "bathAverage": 3.85,
+            "mealAverage": 4.18
+          }
+        }
+      ]
+    },}
