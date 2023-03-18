@@ -5,7 +5,7 @@ export const Test=()=>{
     const [apiContents, setContents] = useState([]);
     useEffect(()=>{
         const testAPI=async()=>{
-            const res = await axiosInstance.get("load");
+            const res = await axiosInstance.get("db");
             const result=res.data;
             console.log(result);
             console.log("読み込み中");
