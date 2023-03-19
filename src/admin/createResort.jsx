@@ -3,16 +3,14 @@ import { useState } from "react";
  import { axiosInstance } from "../utils/axios.js";
 
 export const CreateResort=()=>{
-  const [id, setId] = useState("");
+  const [id, setId] = useState();
   const [name, setName] = useState("");
   const [explain1, setExplain1] = useState("");
   const navigate = useNavigate();
-
-  const onClick = async () => {
-    await axiosInstance.post("/index", { id, name, explain1 });
-    navigate("/index", { replace: true });
-    };
-
+    const onClick = async () => {
+        await axiosInstance.post("/index", { id, name, explain1 });
+        navigate("/index", { replace: true });
+      };
   return (
     <div style={{ margin: "auto",marginTop:"100px", width: "1000px" }}>
       <h1>ゲレンデ追加</h1>
@@ -27,7 +25,8 @@ export const CreateResort=()=>{
       <div>
         <input
           value={id}
-          onChange={(e) => setId(e.target.value)}
+          onChange={(e) =>{{setId(e.target.value)
+                            console.log(e)}}}
           style={{ width: "500px" }}
         />
       </div>

@@ -21,9 +21,9 @@ root.render(
        <Route index element={<Top />} />
        <Route path="Prefecture/*" element={<PrefecturePage/>}/>
        <Route path="test" element={<Test />} />
+       <Route path="create" element={<CreateResort />} />
        <Route path="index" element={<Resorts />} />
        <Route path="index/:id" element={<Resort />} />
-       <Route path="create" element={<CreateResort />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

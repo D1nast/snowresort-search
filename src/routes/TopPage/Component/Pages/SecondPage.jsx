@@ -19,8 +19,8 @@ export const SecondPage=()=>{
                     <div style={{backgroundImage:`url(${api.image})`}}  className="third-tab-top">
                     </div>
                     <div className="third-tab-bottom">
-                        <h3>{api.id}</h3>
-                        <p>{api.created_at}</p>
+                        <h3>{api.name}</h3>
+                        <p>{api.explain1}</p>
                     </div>
                 </div>
                 )

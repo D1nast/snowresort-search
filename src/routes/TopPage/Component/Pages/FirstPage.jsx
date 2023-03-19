@@ -1,5 +1,16 @@
 //rubyのDBから写真と名前、説明等をランダムで返すAPIを作成したい
+import { useEffect,useState } from "react";
+import {axiosInstance} from "../../../../utils/axios";
 export const FirstPage=()=>{
+    const [apiContents, setContents] = useState([]);
+    useEffect(()=>{
+        const getAPI=async()=>{
+            const res = await axiosInstance.get("db");
+            const result=res.data;
+            setContents(result);
+            };
+     getAPI();
+    },[]); 
     return(
         <>
         <div  className="third-tab-contents">
@@ -70,28 +81,28 @@ export const FirstPage=()=>{
             <div className="third-tab-top"></div>
             <div className="third-tab-bottom">
                 <h3>高鷲スノーパーク</h3>
-                <p>ダイナランドと隣接するゲレンデ距離がある</p>
+                <p>ダイナランドと隣接するゲレンデ</p>
             </div>
         </div>
         <div  className="third-tab-contents">
             <div className="third-tab-top"></div>
             <div className="third-tab-bottom">
                 <h3>ホワイトピアたかす</h3>
-                <p>地形活かして滑れるゲレンデ</p>
+                <p>地形を活かして滑れるゲレンデ</p>
             </div>
         </div>
         <div  className="third-tab-contents">
             <div className="third-tab-top"></div>
             <div className="third-tab-bottom">
                 <h3>X-JAM高井富士&よませ温泉スキー場</h3>
-                <p>パークが多く、リフトの速度が速いゲレンデ</p>
+                <p>パークが多く、パークで練習がしたい方にとにかくおすすめ</p>
             </div>
         </div>
         <div  className="third-tab-contents">
             <div className="third-tab-top"></div>
             <div className="third-tab-bottom">
                 <h3>上越国際スキー場</h3>
-                <p>単一のゲレンデとして日本最大の広さをもつ</p>
+                <p>単一のゲレンデとして日本最大の広さをもつ<br/>自然を楽しみながら滑りたい人におすすめ</p>
             </div>
         </div>
         <div  className="third-tab-contents">
