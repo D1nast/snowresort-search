@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { axiosInstance } from "../utils/axios.js";
 
-function Blogs() {
-  const [blogs, setBlogs] = useState();
+export const Resorts=()=> {
+  const [resorts, setResorts] = useState();
   useEffect(() => {
     const f = async () => {
       const res = await axiosInstance.get("/index");
-      setBlogs(res.data);
+      const result=res.data;
+      console.log(result);
+      setResorts(res.data);
     };
   f();
  }, []);
@@ -24,9 +26,9 @@ function Blogs() {
 
      <div>
        <ul>
-         {blogs?.map((b) => (
-           <Link to={`/index/${b.id}`} key={b.id}>
-             <li>{b.title}</li>
+         {resorts?.map((r) => (
+           <Link to={`/index/${r.id}`} key={r.id}>
+             <li>{r.name}</li>
            </Link>
          ))}
        </ul>
@@ -35,4 +37,3 @@ function Blogs() {
   );
 }
 
-export default Blogs;

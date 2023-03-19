@@ -9,7 +9,8 @@ import {Header} from './routes/Header';
 import {Top} from './routes/TopPage/Top';
 import PrefecturePage from './routes/Prefecture/PrefecturePage';
 import {Test} from './routes/Test';
-
+import {Resorts} from './admin/resorts';
+import { Resort } from './admin/resort';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -19,6 +20,8 @@ root.render(
        <Route index element={<Top />} />
        <Route path="Prefecture/*" element={<PrefecturePage/>}/>
        <Route path="test" element={<Test />} />
+       <Route path="index" element={<Resorts />} />
+       <Route path="index/:id" element={<Resort />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
