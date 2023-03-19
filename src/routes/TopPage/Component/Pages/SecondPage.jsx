@@ -5,7 +5,7 @@ export const SecondPage=()=>{
     const [apiContents, setContents] = useState([]);
     useEffect(()=>{
         const getAPI=async()=>{
-            const res = await axiosInstance.get("test");
+            const res = await axiosInstance.get("db");
             const result=res.data;
             setContents(result);
             };
