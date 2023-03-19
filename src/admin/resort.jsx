@@ -11,22 +11,22 @@ import { axiosInstance } from "../utils/axios.js";
      setResorts(res.data);
    };
    f();
- }, []);
+ },);
   return (
     <div style={{ margin: "auto", width: "1000px" }}>
-      <h1>ブログ詳細画面</h1>
+      <h1>詳細</h1>
       <div>
         <Link to="/">TOP</Link>
       </div>
       <div>
-        <Link to="/create">記事作成画面</Link>
+        <Link to="/create">作成</Link>
       </div>
       <div>
-        <Link to="/index">記事一覧画面</Link>
+        <Link to="/index">一覧</Link>
       </div>
 
-     <h2>{resorts?.name}</h2>
-     <h3>本文</h3>
+     <h2>id:{resorts?.id} {resorts?.name}</h2>
+     <h3>説明</h3>
      <p>{resorts?.explain1}</p>
     </div>
   );

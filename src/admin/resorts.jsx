@@ -28,7 +28,7 @@ export const Resorts=()=> {
        <ul>
          {resorts?.map((r) => (
            <Link to={`/index/${r.id}`} key={r.id}>
-             <li>{r.name}</li>
+             <li>id:{r.id} {r.name}</li>
            </Link>
          ))}
        </ul>
