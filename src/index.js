@@ -11,6 +11,7 @@ import PrefecturePage from './routes/Prefecture/PrefecturePage';
 import {Test} from './routes/Test';
 import {Resorts} from './admin/resorts';
 import { Resort } from './admin/resort';
+import { CreateResort } from './admin/createResort';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ root.render(
        <Route path="test" element={<Test />} />
        <Route path="index" element={<Resorts />} />
        <Route path="index/:id" element={<Resort />} />
+       <Route path="create" element={<CreateResort />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
