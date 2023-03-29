@@ -10,7 +10,7 @@ export const ThirdTab=()=>{
     const [secondPage,setSecondPage]=useState(false);
     const [thirdPage,setThirdPage]=useState(false);
     const [fourthPage,setFourthPage]=useState(false);
-  
+
     const onClickFirstPage=()=>{
       setFirstPage(true);
       setSecondPage(false);
@@ -35,9 +35,34 @@ export const ThirdTab=()=>{
       setThirdPage(false);
       setFourthPage(true);
     };
+    const tab={
+      width: '100%',
+      height: 'auto'
+    }
+    const tabContainer={
+      display:'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+    }
+    const paging={
+      textAlign: 'center',
+      fontSize: '1.125rem',
+      margin: '50px 0 100px',
+      display: 'inline-block'
+      // },
+      // ul:{
+      //   display: 'inline-block',
+      // },
+      // li:{
+      //   display: 'inline-block',
+      // }
+    }
+    const pagingUl={
+
+    }
     return(
-     <div  className="third-tab">
-        <div  className="third-tab-container">
+     <div  style={tab}>
+        <div style={tabContainer}>
         {firstPage&&<FirstPage/>}
         {secondPage&&<SecondPage/>}
         {thirdPage&&<ThirdPage/>}

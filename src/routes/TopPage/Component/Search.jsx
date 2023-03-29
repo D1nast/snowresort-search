@@ -4,7 +4,6 @@ import React,{useState} from "react";
 import {ThirdTab} from "./Tabs/ThirdTab";
 import {FourthTab} from "./Tabs/FourthTab";
 
-
 export const Search=()=>{
   // const [firstTab,setFirstTab]=useState(true);
   // const [secondTab,setSecondTab]=useState(false);
@@ -35,18 +34,44 @@ export const Search=()=>{
     setThirdTab(false);
     setFourthTab(true);
   };
+  const secondMain={
+    width: '100%',
+    height: '100vh',
+  }
+  const searchPart={
+    main:{
+        width: '100%',
+        height: 'auto',
+    },
+    h2:{
+        display: 'inline-block',
+        marginTop: '20px',
+        marginLeft: '20px',
+        borderBottom: '1px solid black',
+    },
+  }
+  const tabListContainer={
+    width: '100%',
+    margin: '0 auto',
+  }
+  const tabContainer={
+    border: '1px solid #333',
+    padding: '20px',
+    lineHeight: '2',
+    minHeight: '450px',
+  }
     return(
-<div className="secondMain">
-      <div className="searchPart">
-        <h2>Search</h2>
-        <div className="tab-list-container">
+<div style={secondMain}>
+      <div style={searchPart}>
+        <h2 style={searchPart.h2}>Search</h2>
+        <div style={tabListContainer}>
           <ul className="tab-list">
             {/* <li className={firstTab ? "tab-item tab-active" : ""} onClick={onClickFirstTab}><span>現在地から探す</span></li>
             <li className={secondTab ? "tab-item tab-active" : ""} onClick={onClickSecondTab}><span>都道府県から探す</span></li> */}
             <li className={thirdTab ? "tab-item tab-active" : ""} onClick={onClickThirdTab}><span>ゲレンデから探す</span></li>
             <li className={fourthTab ? "tab-item tab-active" : ""} onClick={onClickfourthTab}><span>宿から探す</span></li>
           </ul>
-          <div className="tab-container">
+          <div style={tabContainer}>
             {/* {firstTab&&<FirstTab/>}
             {secondTab &&<SecondTab/>} */}
             {thirdTab&&<ThirdTab/>}
