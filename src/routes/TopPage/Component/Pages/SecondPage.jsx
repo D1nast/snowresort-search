@@ -13,6 +13,15 @@ export const SecondPage=()=>{
         padding:'3px',
         border: 'none'
     }
+    const tabContents={
+        width: '31%',
+        height: '370px',
+        margin:'20px 15px',
+        backgroundColor: 'white',
+        boxShadow: '0 0 4px',
+        paddingBottom:'50px',
+        color:'#444444'
+      }
     useEffect(()=>{
         const getAPI=async()=>{
             const res = await axiosInstance.get("db");
@@ -25,15 +34,17 @@ export const SecondPage=()=>{
         <>
         {apiContents.map((api,index)=>{
             return(
-                <div key={index} className="third-tab-contents">
-                    <div style={{backgroundImage:`url(${api.image})`}}  className="third-tab-top">
+                <div key={index} style={tabContents}>
+                    <div  style={tabTop}>
                     </div>
-                    <div className="third-tab-bottom">
+                    {/* style={{backgroundImage:`url(${api.image})`}}  */}
+                    <div style={tabBottom}>
                         <h3>{api.name}</h3>
                         <p>{api.explain1}</p>
                     </div>
                 </div>
                 )
-        })}
+            })}
         </>
-    );};
+    );
+};
