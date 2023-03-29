@@ -3,6 +3,16 @@ import {axiosInstance} from "../../../../utils/axios";
 
 export const SecondPage=()=>{
     const [apiContents, setContents] = useState([]);
+    const tabTop={
+        width: '100%',
+        height: '60%',
+        backgroundImage: 'url("../public/Top.jpg")',
+        backgroundSize: 'cover'
+    }
+    const tabBottom={
+        padding:'3px',
+        border: 'none'
+    }
     useEffect(()=>{
         const getAPI=async()=>{
             const res = await axiosInstance.get("db");

@@ -3,6 +3,16 @@ import {axiosInstance} from "../../../../utils/axios";
 
 export const ThirdPage=()=>{
     const [apiContents, setContents] = useState([]);
+    const tabTop={
+        width: '100%',
+        height: '60%',
+        backgroundImage: 'url("../public/Top.jpg")',
+        backgroundSize: 'cover'
+    }
+    const tabBottom={
+        padding:'3px',
+        border: 'none'
+    }
     useEffect(()=>{
         const testAPI=async()=>{
             const res = await axiosInstance.get("test");
@@ -16,9 +26,9 @@ export const ThirdPage=()=>{
         {apiContents.map((api,index)=>{
             return(
                 <div key={index} className="third-tab-contents">
-                    <div className="third-tab-top">
+                    <div style={tabTop}>
                     </div>
-                    <div className="third-tab-bottom"></div>
+                    <div style={tabBottom}></div>
                 </div>
                 )
         })};

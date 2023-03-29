@@ -77,5 +77,5 @@ export const ThirdTab=()=>{
                 </ul>  
             </div>
      </div>
-    );
+    )
 }

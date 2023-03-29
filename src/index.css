@@ -93,59 +93,6 @@ body {
   background-color: white;
 }
 
-.main {
-  width: 100%;
-  height: 90vh;
-  margin-top: 72px;
-  background-image: url("../public/Top.jpg");
-  background-size: cover;
-  z-index: 9;
-}
-
-.overview {
-  width: 100%;
-  height: 55vh;
-  display: flex;
-  text-align: center;
-  margin-top: 72px;
-}
-
-.intro {
-  width: 70%;
-  height: 200px;
-  margin-top: 70px;
-  text-align: left;
-}
-.intro h2 {
-    color: white;
-    display: block;
-    margin-left: 20%;
-    padding-top: 15%;
-}
-.login-form {
-  width: 20%;
-  height: 400px;
-  margin-left: 50px;
-  margin-top: 70px;
-  padding-top: 50px;
-  background-color: white;
-  color: #444444;
-  box-shadow: 0 0 4px(68 68 68 / 24%);
-}
-.login-form h2 {
-    display: inline-block;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #000;
-    font-weight: normal;
-}
-.login-form p {
-    margin-top: 10px;
-  }
-
-.form-wrapper {
-  width: 100%;
-  height: 100%;
-}
 
 .btn-wrapper {
   text-align: center;
@@ -166,34 +113,7 @@ body {
   text-decoration: none;
   background-color: #a0c4d3;
 }
-.Sign-up {
-  margin-top: 10px;
-}
-.Sign-up  a {
-    text-decoration: none;
-    color: #444444;
-    display: inline-block;
-    padding: 5px;
-    margin-top: 10px;
-    background-color: white;
-  }
 
-/*TopPrefectureSearchのCSS*/
-.secondMain {
-  width: 100%;
-  height: 100vh;
-}
-
-.searchPart {
-  width: 100%;
-  height: auto;
-}
-.searchPart  h2 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-bottom: 1px solid black;
-}
 .searchPrefecture{
   display: flex;
   width: 100%;
