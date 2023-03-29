@@ -1,25 +1,56 @@
 import { Link } from "react-router-dom";
 
 export const Header=()=>{
+    const header={
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        height: '72px',
+        backgroundColor: '#00c4cc',
+        color: '#fff',
+        width: '100%',
+        alignItems: 'center',
+    }
+    const logo={
+        margin: '0',
+        lineHeight: '60px',
+        float: 'left',
+    }
+    const nav={
+        main:{
+            listStyle: 'none',
+            float: 'right',
+        },
+        li:{
+            display: 'inline-block',
+        },
+        a:{
+            display: 'inline-block',
+            padding: '3px 15px',
+            color: 'inherit',
+            textDecoration: 'none',
+        }
+    }
+
     return(
-    <header>
+    <div style={header}>
      <div className="container">
-        <h1 className="logo">GerendeNAVI</h1>
-        <ul className="nav">
-        <li>
-            <Link to="/">HOME</Link>
+        <h1 style={logo}>GerendeNAVI</h1>
+        <ul style={nav.main}>
+        <li style={nav.li}>
+            <Link to="/" style={nav.a}>HOME</Link>
         </li>
-        <li>
-            <Link to="Prefecture">都道府県</Link>
+        <li style={nav.li}>
+            <Link to="Prefecture" style={nav.a}>都道府県</Link>
         </li>
-        <li>
-            <Link to="test">テスト</Link>
+        <li style={nav.li}>
+            <Link to="test" style={nav.a}>テスト</Link>
         </li>
-        <li>
-             <Link to="about">About</Link>
+        <li style={nav.li}>
+             <Link to="about" style={nav.a}>About</Link>
         </li>
         </ul>
      </div>
-    </header>
+    </div>
     );
 }
