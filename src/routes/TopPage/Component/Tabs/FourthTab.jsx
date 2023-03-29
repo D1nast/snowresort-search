@@ -22,8 +22,17 @@ export const FourthTab=()=>{
       color:'#444444'
     }
     const tabTop={
-      width: '100%',
-      height: '60%'
+      top:{
+        width: '100%',
+        height: '60%'
+      },
+      a:{
+        display: 'inline-block',
+      },
+      img:{
+        width: '100%',
+        height: '210px',
+      }
     }
     const tabBottom={
       padding:'0px 10px',
@@ -34,7 +43,6 @@ export const FourthTab=()=>{
       const response=await axios.get("https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20170426?format=json&keyword=%E3%82%B2%E3%83%AC%E3%83%B3%E3%83%87%20%E3%82%B9%E3%82%AD%E3%83%BC%20%E3%82%B9%E3%83%8E%E3%83%9C&hits=30&applicationId=1001318956766170232");
       const result=response.data;
       const resultStr=JSON.stringify(result);
-      console.log(resultStr);
       const obj=JSON.parse(resultStr);
       const getones=JSON.stringify(obj.hotels);
       const jsonAPIs=JSON.parse(getones);
@@ -52,9 +60,9 @@ export const FourthTab=()=>{
             <>
              <div key={index} style={tabContents}>
                {/* <div style={{backgroundImage:`url(${api.hotel[0].hotelBasicInfo.hotelImageUrl})`}} className="fourth-tab-top"></div> */}
-                <div style={tabTop}className="fourth-tab-top">
-                  <a href={api.hotel[0].hotelBasicInfo.hotelInformationUrl}>
-                   <img src={api.hotel[0].hotelBasicInfo.hotelImageUrl} alt="#"></img>
+                <div style={tabTop}>
+                  <a style={tabTop.a} href={api.hotel[0].hotelBasicInfo.hotelInformationUrl}>
+                   <img style={tabTop.img} src={api.hotel[0].hotelBasicInfo.hotelImageUrl} alt="#"></img>
                   </a>
                 </div>
                 <div style={tabBottom}> 
