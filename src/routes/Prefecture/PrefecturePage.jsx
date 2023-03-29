@@ -50,7 +50,6 @@ import Tokushima from "./Component/Shikoku/Tokushima";
 
 
 const PrefecturePage=()=>{
-  console.log(22);
     return(
       <>
         <Routes>
