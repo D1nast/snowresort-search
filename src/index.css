@@ -43,6 +43,7 @@ body {
 .tab-list {
   display: flex;
   list-style-type: none;
+  justify-content: center;
 }
 .tab-list  li {
   width: 200px;
