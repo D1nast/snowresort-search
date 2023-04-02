@@ -10,7 +10,7 @@ export const EditResort=()=>{
 
  const params = useParams();
  const navigate=useNavigate();
-
+// っっs
  const onClick = async () => {
   await axiosInstance.post('/edit/:id/update',{id,name,explain1,url});
   if (axiosInstance) {
