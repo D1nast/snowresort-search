@@ -7,7 +7,7 @@ import {FourthTab} from "./Tabs/FourthTab";
 export const Search=()=>{
   // const [firstTab,setFirstTab]=useState(true);
   // const [secondTab,setSecondTab]=useState(false);
-  const [thirdTab,setThirdTab]=useState(false);
+  const [thirdTab,setThirdTab]=useState(true);
   const [fourthTab,setFourthTab]=useState(false);
 
   // const onClickFirstTab=()=>{

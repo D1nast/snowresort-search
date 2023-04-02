@@ -55,7 +55,6 @@ export const FourthTab=()=>{
       <div style={tab}>
       <div style={tabContainer}>
          {apiHotel.map((api,index)=>{
-          console.log(api.hotel[0].hotelBasicInfo.hotelImageUrl);
           return(
             <>
              <div key={index} style={tabContents}>

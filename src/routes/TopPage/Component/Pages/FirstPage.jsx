@@ -24,7 +24,7 @@ export const FirstPage=()=>{
       }
     useEffect(()=>{
         const getAPI=async()=>{
-            const res = await axiosInstance.get("db");
+            const res = await axiosInstance.get("list1");
             const result=res.data;
             setContents(result);
             };

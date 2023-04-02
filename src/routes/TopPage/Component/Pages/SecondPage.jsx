@@ -1,6 +1,5 @@
 import { useEffect,useState } from "react";
 import {axiosInstance} from "../../../../utils/axios";
-
 export const SecondPage=()=>{
     const [apiContents, setContents] = useState([]);
     const tabTop={
@@ -24,7 +23,7 @@ export const SecondPage=()=>{
       }
     useEffect(()=>{
         const getAPI=async()=>{
-            const res = await axiosInstance.get("db");
+            const res = await axiosInstance.get("list2");
             const result=res.data;
             setContents(result);
             };
