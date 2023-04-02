@@ -9,8 +9,8 @@ export const EditResort=()=>{
  const [url, setUrl] = useState("");
 
  const params = useParams();
- const navigate=useNavigate();
-// っっs
+ const navigate = useNavigate();
+
  const onClick = async () => {
   await axiosInstance.post('/edit/:id/update',{id,name,explain1,url});
   if (axiosInstance) {
@@ -43,12 +43,7 @@ export const EditResort=()=>{
       <div>
         <Link to="/index">一覧</Link>
       </div>
-      <h4>id</h4>
-      <input
-          value={id}
-          style={{ width: "500px" }}
-          onChange={(e) => setId(e.target.value)}
-      />
+      <h4>{id}</h4>
       <h4>ゲレンデ</h4>
       <input
           value={name}
