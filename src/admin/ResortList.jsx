@@ -7,7 +7,6 @@ export const ResortList=()=> {
   useEffect(() => {
     const getData = async () => {
       const res = await axiosInstance.get("/index");
-      const result=res.data;
       setResorts(res.data);
     };
   getData();
