@@ -2,16 +2,15 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { axiosInstance } from "../utils/axios.js";
 
-export const Resorts=()=> {
+export const ResortList=()=> {
   const [resorts, setResorts] = useState();
   useEffect(() => {
-    const f = async () => {
+    const getData = async () => {
       const res = await axiosInstance.get("/index");
       const result=res.data;
-      console.log(result);
       setResorts(res.data);
     };
-  f();
+  getData();
  }, []);
 
   return (
@@ -24,10 +23,22 @@ export const Resorts=()=> {
         <Link to="/create">記事作成画面</Link>
       </div>
 
-     <div>
+     <div style={{float: "left"}}>
+       <h3>確認</h3>
        <ul>
          {resorts?.map((r) => (
            <Link to={`/index/${r.id}`} key={r.id}>
+             <li>id:{r.id} {r.name}</li>
+           </Link>
+         ))}
+       </ul>
+     </div>
+
+     <div style={{float: "right"}}>
+       <h3>編集</h3>
+       <ul>
+         {resorts?.map((r) => (
+           <Link to={`/edit/${r.id}`} key={r.id}>
              <li>id:{r.id} {r.name}</li>
            </Link>
          ))}

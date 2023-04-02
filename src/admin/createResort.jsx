@@ -26,7 +26,7 @@ export const CreateResort=()=>{
         <input
           value={id}
           onChange={(e) =>{{setId(e.target.value)
-                            console.log(e)}}}
+          console.log(e)}}}
           style={{ width: "500px" }}
         />
       </div>

@@ -35,7 +35,7 @@ export const Header=()=>{
     return(
     <div style={header}>
      <div className="container">
-        <h1 style={logo}>GerendeNAVI</h1>
+        <h1 style={logo}>Top</h1>
         <ul style={nav.main}>
         <li style={nav.li}>
             <Link to="/" style={nav.a}>HOME</Link>

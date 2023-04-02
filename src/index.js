@@ -8,10 +8,12 @@ import {Header} from './routes/Header';
 // import Footer from './routes/Footer';
 import {Top} from './routes/TopPage/Top';
 import PrefecturePage from './routes/Prefecture/PrefecturePage';
-import {Test} from './routes/Test';
-import {Resorts} from './admin/resorts';
-import { Resort } from './admin/resort';
-import { CreateResort } from './admin/createResort';
+//以下admin 
+import {ResortList} from './admin/ResortList';
+import { Resort } from './admin/Resort';
+import { CreateResort } from './admin/CreateResort';
+import { EditResort } from './admin/Edit';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -20,10 +22,10 @@ root.render(
       <Routes>
        <Route index element={<Top />} />
        <Route path="Prefecture/*" element={<PrefecturePage/>}/>
-       <Route path="test" element={<Test />} />
        <Route path="create" element={<CreateResort />} />
-       <Route path="index" element={<Resorts/>} />
+       <Route path="index" element={<ResortList/>} />
        <Route path="index/:id" element={<Resort/>} />
+       <Route path="edit/:id" element={<EditResort/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

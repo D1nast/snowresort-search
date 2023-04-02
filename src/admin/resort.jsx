@@ -24,10 +24,10 @@ import { axiosInstance } from "../utils/axios.js";
       <div>
         <Link to="/index">一覧</Link>
       </div>
-
      <h2>id:{resorts?.id} {resorts?.name}</h2>
      <h3>説明</h3>
      <p>{resorts?.explain1}</p>
+     <p>{resorts?.url}</p>
     </div>
   );
 };
