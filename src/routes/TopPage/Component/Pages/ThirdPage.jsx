@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect,useState,React } from "react";
 import {axiosInstance} from "../../../../utils/axios";
 export const ThirdPage=()=>{
     const [apiContents, setContents] = useState([]);

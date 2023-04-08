@@ -1,5 +1,5 @@
 //rubyのDBから写真と名前、説明等をランダムで返すAPIを作成したい
-import { useEffect,useState } from "react";
+import { useEffect,useState,React } from "react";
 import {axiosInstance} from "../../../../utils/axios";
 export const FirstPage=()=>{
     const [apiContents, setContents] = useState([]);

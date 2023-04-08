@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect,React } from "react";
 import { axiosInstance } from "../utils/axios.js";
  
  export const Resort=()=> {

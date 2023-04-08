@@ -126,7 +126,7 @@ body {
   .wrapperTop {
     width: 100%;
     height: 200px;
-    background-image: url(../public/Top.jpg);
+    /* background-image: url(../public/Top.jpg); */
     background-size: cover;
   }
   
@@ -140,7 +140,7 @@ body {
     width: 100%;
     height: 90vh;
     margin-top: 72px;
-    background-image: url("../public/Top.jpg");
+    /* background-image: url("../public/Top.jpg"); */
     background-size: cover;
     z-index: 9;
   }
@@ -353,7 +353,7 @@ body {
   .third-tab-top{
     width: 100%;
     height: 60%;
-    background-image: url("../public/Top.jpg");
+    /* background-image: url("../public/Top.jpg"); */
     background-size: cover;
   }
   .third-tab-bottom{
@@ -387,7 +387,7 @@ body {
   .fourth-tab-top{
     width: 100%;
     height: 60%;
-    background-image: url("../public/Top.jpg");
+    /* background-image: url("../public/Top.jpg"); */
     background-size: cover;
   }
   .fourth-tab-bottom{
@@ -527,7 +527,7 @@ body {
     .wrapperTop {
       width: 100%;
       height: 200px;
-      background-image: url(../public/Top.jpg);
+      /* background-image: url(../public/Top.jpg); */
       background-size: cover;
     }
     
@@ -541,7 +541,7 @@ body {
       width: 100%;
       height: 90vh;
       margin-top: 72px;
-      background-image: url("../public/Top.jpg");
+      /* background-image: url("../public/Top.jpg"); */
       background-size: cover;
       z-index: 9;
     }
@@ -749,7 +749,7 @@ body {
     .third-tab-top{
       width: 100%;
       height: 60%;
-      background-image: url("../public/Top.jpg");
+      /* background-image: url("../public/Top.jpg"); */
       background-size: cover;
     }
     .third-tab-bottom{
@@ -777,7 +777,7 @@ body {
     .fourth-tab-top{
       width: 100%;
       height: 60%;
-      background-image: url("../public/Top.jpg");
+      /* background-image: url("../public/Top.jpg"); */
       background-size: cover;
     }
     .fourth-tab-bottom{

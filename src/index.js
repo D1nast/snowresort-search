@@ -7,7 +7,6 @@ import { BrowserRouter,Routes,Route} from "react-router-dom";
 import {Header} from './routes/Header';
 // import Footer from './routes/Footer';
 import {Top} from './routes/TopPage/Top';
-import PrefecturePage from './routes/Prefecture/PrefecturePage';
 //以下admin 
 import {ResortList} from './admin/ResortList';
 import { Resort } from './admin/Resort';
@@ -21,7 +20,6 @@ root.render(
     <Header/>
       <Routes>
        <Route index element={<Top />} />
-       <Route path="Prefecture/*" element={<PrefecturePage/>}/>
        <Route path="create" element={<CreateResort />} />
        <Route path="index" element={<ResortList/>} />
        <Route path="index/:id" element={<Resort/>} />
