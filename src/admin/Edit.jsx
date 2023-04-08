@@ -1,4 +1,4 @@
-import { Link, useParams,useNavigate} from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import { useState, useEffect,React } from "react";
 import { axiosInstance } from "../utils/axios.js";
 
@@ -7,19 +7,11 @@ export const EditResort=()=>{
  const [name, setName] = useState("");
  const [explain1, setExplain1] = useState("");
  const [url, setUrl] = useState("");
-
  const params = useParams();
- const navigate = useNavigate();
 
  const onClick = async () => {
-  await axiosInstance.post('/edit/:id/update',{id,name,explain1,url});
-  if (axiosInstance) {
-    console.log("成功しました");
-    navigate("/index");
-  } else 
-    console.log("失敗しました")
+  await axiosInstance.post(`/edit/${id}/update`,{id,name,explain1,url});
   }
-
   useEffect(() => {
     const getData = async () => {
     const res = await axiosInstance.get(`/index/${params.id}`);

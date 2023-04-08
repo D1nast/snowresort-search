@@ -12,7 +12,6 @@ import {ResortList} from './admin/ResortList';
 import { Resort } from './admin/Resort';
 import { CreateResort } from './admin/CreateResort';
 import { EditResort } from './admin/Edit';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
