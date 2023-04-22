@@ -7,6 +7,7 @@ import { BrowserRouter,Routes,Route} from "react-router-dom";
 import {Header} from './routes/Header';
 // import Footer from './routes/Footer';
 import {Top} from './routes/TopPage/Top';
+import { App } from './test.tsx';
 //以下admin 
 import {ResortList} from './admin/ResortList';
 import { Resort } from './admin/Resort';
@@ -23,6 +24,7 @@ root.render(
        <Route path="index" element={<ResortList/>} />
        <Route path="index/:id" element={<Resort/>} />
        <Route path="edit/:id" element={<EditResort/>} />
+       <Route path="app" element={<App/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

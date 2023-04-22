@@ -3,10 +3,19 @@ import {axiosInstance} from "../../../../utils/axios";
 export const ThirdPage=()=>{
     const [apiContents, setContents] = useState([]);
     const tabTop={
-        width: '100%',
-        height: '60%',
-        backgroundImage: 'url("../public/Top.jpg")',
-        backgroundSize: 'cover'
+        top:{
+          width: '100%',
+          height: '60%',
+          backgroundImage: 'url("../public/Top.jpg")',
+          backgroundSize: 'cover'
+        },
+        a:{
+          display: 'inline-block',
+        },
+        img:{
+          width: '100%',
+          height: '210px',
+        }
     }
     const tabBottom={
         padding:'3px',
@@ -34,9 +43,11 @@ export const ThirdPage=()=>{
         {apiContents.map((api,index)=>{
             return(
                 <div key={index} style={tabContents}>
-                    <div  style={tabTop}>
+                    <div  style={tabTop.top}>
+                        <a style={tabTop.a} href={api.url}>
+                            <img style={tabTop.img} src={api.image} alt="#"></img>
+                        </a>
                     </div>
-                    {/* style={{backgroundImage:`url(${api.image})`}}  */}
                     <div style={tabBottom}>
                         <h3>{api.name}</h3>
                         <p>{api.explain1}</p>

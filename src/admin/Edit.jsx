@@ -7,10 +7,11 @@ export const EditResort=()=>{
  const [name, setName] = useState("");
  const [explain1, setExplain1] = useState("");
  const [url, setUrl] = useState("");
+ const [image, setImage] = useState("");
  const params = useParams();
 
  const onClick = async () => {
-  await axiosInstance.post(`/edit/${id}/update`,{id,name,explain1,url});
+  await axiosInstance.post(`/edit/${id}/update`,{id,name,explain1,url,image});
   }
   useEffect(() => {
     const getData = async () => {
@@ -19,6 +20,7 @@ export const EditResort=()=>{
     setName(res.data.name);
     setExplain1(res.data.explain1);
     setUrl(res.data.url);
+    setImage(res.data.image);
     };
   getData();
   },[]);
@@ -53,6 +55,12 @@ export const EditResort=()=>{
           value={url}
           style={{ width: "500px" }}
           onChange={(e) => setUrl(e.target.value)}
+      />
+      <h4>イメージ</h4>
+      <input
+          value={image}
+          style={{ width: "500px" }}
+          onChange={(e) => setImage(e.target.value)}
       />
       <div style={{ marginTop: "20px" }}>
         <button onClick={onClick}>更新</button>
