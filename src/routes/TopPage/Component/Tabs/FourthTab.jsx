@@ -1,5 +1,6 @@
 import { useState,useEffect,React } from "react";
 import axios from "axios";
+import { json } from "react-router-dom";
 
 export const FourthTab=()=>{
     const [apiHotel, setHotel] = useState([]);
@@ -21,32 +22,28 @@ export const FourthTab=()=>{
       paddingBottom:'50px',
       color:'#444444'
     }
-    const tabTop={
-      top:{
-        width: '100%',
-        height: '60%'
-      },
-      a:{
-        display: 'inline-block',
-      },
-      img:{
-        width: '100%',
-        height: '210px',
-      }
-    }
     const tabBottom={
       padding:'0px 10px',
       border: 'none'
     }
+    const generateStyle=(api)=>{
+      return {
+          width:"100%",
+          height:"60%",
+          backgroundImage: `url(${api.hotel[0].hotelBasicInfo.hotelImageUrl})`,
+          backgroundSize: 'cover',
+          cursor: "pointer",
+       };
+    };
+    const handleClick = (api) => {
+      window.location.href = api.hotel[0].hotelBasicInfo.hotelInformationUrl;
+    };
     useEffect(()=>{
     const getAPI=async()=>{
       const response=await axios.get("https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20170426?format=json&keyword=%E3%82%B2%E3%83%AC%E3%83%B3%E3%83%87%20%E3%82%B9%E3%82%AD%E3%83%BC%20%E3%82%B9%E3%83%8E%E3%83%9C&hits=30&applicationId=1001318956766170232");
       const result=response.data;
-      const resultStr=JSON.stringify(result);
-      const obj=JSON.parse(resultStr);
-      const getones=JSON.stringify(obj.hotels);
-      const jsonAPIs=JSON.parse(getones);
-      setHotel(jsonAPIs);
+      const APIdata=result.hotels
+      setHotel(APIdata);
     };
     getAPI();
     },[]);
@@ -58,11 +55,8 @@ export const FourthTab=()=>{
           return(
             <>
              <div key={index} style={tabContents}>
-               {/* <div style={{backgroundImage:`url(${api.hotel[0].hotelBasicInfo.hotelImageUrl})`}} className="fourth-tab-top"></div> */}
-                <div style={tabTop}>
-                  <a style={tabTop.a} href={api.hotel[0].hotelBasicInfo.hotelInformationUrl}>
-                   <img style={tabTop.img} src={api.hotel[0].hotelBasicInfo.hotelImageUrl} alt="#"></img>
-                  </a>
+                <div style={generateStyle(api)}
+                     onClick={() => handleClick(api)}>
                 </div>
                 <div style={tabBottom}> 
                   <h4>{api.hotel[0].hotelBasicInfo.hotelName}</h4>

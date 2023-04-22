@@ -22,9 +22,12 @@ export const FourthPage=()=>{
             height:"60%",
             backgroundImage: `url(${api.image})`,
             backgroundSize: 'cover',
+            cursor:"pointer"
          };
     };
-
+    const handleClick = (api) => {
+        window.location.href = api.url;
+      };
     useEffect(()=>{
         const getAPI=async()=>{
             const res = await axiosInstance.get("list4");
@@ -38,9 +41,8 @@ export const FourthPage=()=>{
         {apiContents.map((api,index)=>{
             return(
                 <div key={index} style={tabContents}>
-                    <div  style={generateStyle(api)}>
-                        <a style={{display: 'inline-block',}} href={api.url}>
-                        </a>
+                    <div  style={generateStyle(api)}
+                          onClick={() => handleClick(api)}>
                     </div>
                     <div style={tabBottom}>
                         <h3>{api.name}</h3>
